@@ -1,0 +1,113 @@
+:root {
+    --dark-color: #19283f;
+    --gren-color: #539165;
+    --redbondi-color :#C51E30;
+    --withe-color: #F7F7F7;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+body {
+    font-family:  'Roboto', sans-serif;
+    height: 10000px;
+    padding: 0.5rem, 1rem;
+}
+
+.main-btn {
+    background-color: var(--redbondi-color);
+    color: var(--yellow-color);
+}
+
+.main-btn:hover {
+    color: var(--gren-color);
+}
+
+.main-title::after {
+    content: '';
+    width: 120px;
+    height: 2px;
+    background-color: var(--gren-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/* Start Navbaer */
+.navbar {
+    background-color: var(--withe-color);
+}
+.navbar .navbar-nav .nav-link {
+    color: rgb(30, 22, 7);
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--gren-color);
+}
+.navbar .search{
+    border-left: 1px solid var(--gren-color);
+}
+
+.navbar .search svg {
+    color: var(--gren-color);
+}
+
+.navbar .navbar-toggler {
+    color: white;
+    font-size: 25px;
+    border-color: white;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.btn {
+    color: white;
+    /* background-color: var(--redbondi-color); */
+}
+/* End Navbaer */
+
+/* start landing */
+
+.landing {
+    background-image: url(/img/rodion-kutsaiev-0VGG7cqTwCo-unsplash.png);
+    min-height:calc(100vh - 72px ) ;
+}
+/* 
+.text-center .text-light {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+/* End landing */
+
+/* start Features */
+
+.features .icon-holder {
+    height: 200px;
+}
+
+.features .icon-holder svg {
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.features .icon-holder .number {
+    font-size: 12rem;
+    color: var(--section-color);
+}
+
+.features .icon-holder .icon {
+    color: var(--gren-color);
+    font-size: 100px;
+}
+
+.features .feat h4 {
+    color: var(--yellow-color);
+}
+
+
+
+
+/* End Features */
